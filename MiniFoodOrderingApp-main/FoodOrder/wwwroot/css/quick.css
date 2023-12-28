@@ -1,0 +1,42 @@
+﻿.row {
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 0.1rem 0.5rem rgb(0 0 0 / 15%);
+    margin: 50px;
+}
+
+    .row img {
+        width: 250px;
+        height: 250px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .row div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 6px;
+        text-align: center;
+        align-items: center;
+    }
+
+.borderRow {
+    background-color: #cd0042;
+    border-radius: 3px;
+    color: white;
+}
+
+    .borderRow a {
+        text-decoration: none;
+        color: white;
+    }
+
+.row i {
+    margin-right: 2px;
+}
+
+.row .borderRow {
+    padding: 3px;
+    justify-content: center;
+}

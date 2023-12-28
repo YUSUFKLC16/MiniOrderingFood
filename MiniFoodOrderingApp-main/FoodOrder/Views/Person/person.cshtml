@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+@using FoodOrder.Models.Authentication
+@model User
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="~/css/info.css" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-1">
+            <a asp-action="main" asp-controller="Home"><img src="/Food-Img/Asset/logo.svg" alt="" /> </a>
+
+            <a asp-action="main" asp-controller="Home"> Home </a>
+            <a href="">About Us</a>
+            <a href="">contact</a>
+        </div>
+        @if (!(Context.Request.Cookies["username"] is null))
+        {
+            <div class="navbar-2" style="width:400px">
+                <div class="profile" style=" width:150px;display:flex">
+                    <img src="~/Food-Img/Asset/userpp.png" style="margin-right:3px" />
+                    <a asp-action="person" asp-controller="Person" class="btnProfile">@Context.Request.Cookies["username"]</a>
+                </div>
+                <a href="/home/GoBasket">Sepet</a>
+                <a asp-controller="logIn" asp-action="Logout">Çıkış Yap</a>
+            </div>
+        }
+    </div>
+
+    @if (!(ViewBag.message is null))
+    {
+        <div class="alert alert-success" role="alert">
+            @ViewBag.message
+        </div>
+    }
+
+    <form asp-action="person" asp-controller="Person"> 
+        <div class="container">
+            <div class="row row1">
+                <h3 style="text-align: center; color: #ea004b">Hesabım</h3>
+                <hr />
+            </div>
+            <div class="row">
+                <span>Ad:</span>
+                <input type="text" value="@Model.name" asp-for="@Model.name" required/>
+            </div>
+            <div class="row">
+                <span>SoyAd:</span>
+                <input type="text" value="@Model.name" asp-for="@Model.name" required />
+            </div>
+            <div class="row">
+                <span>Tel:</span>
+                <input type="text" value="@Model.phone" asp-for="@Model.phone" required />
+            </div>
+            <div class="row">
+                <span>Mail:</span>
+                <input type="text" value="@Model.Email" asp-for="@Model.Email" required />
+            </div>
+            <div class="row">
+                <span>Adres:</span>
+                <input type="text" value="@Model.adress" asp-for="@Model.adress" required />
+            </div>
+            <div class="row">
+                <button class="update" type="submit">Güncelle</button>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

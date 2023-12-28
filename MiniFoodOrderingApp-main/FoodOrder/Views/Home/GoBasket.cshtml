@@ -1,0 +1,91 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model FoodOrder.Models.Context
+@using FoodOrder.Models
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/style1.css"/>
+   
+ 
+     
+        @if (ViewBag.cartline != null)
+        {
+    <table class="table thead-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">türü</th>
+                <th scope="col">adet</th>
+                <th scope="col">fiyat</th>
+                <th scope="col">Çıkar</th>
+
+
+            </tr>
+        </thead>
+             @foreach (Cartline item in ViewBag.cartLine)
+          {
+ 
+            if (item.foodtype == "burger")
+            {
+
+                    string path = $"/Food-Img/All-Food/Burger/burger-{item.foodId}.png";
+                    <tr>
+                    <td><img class="accordion-item" src=@path>
+                    <td>Burger</td>
+                    <td>@item.quantitiy</td>
+                    <td>@item.price </td>
+                    <td><a asp-action="remevotocart" asp-controller="Card" asp-route-ıd="@item.foodId" asp-route-type="@item.foodtype"  style="display:inline-block;background-color:#cd0042;text-decoration:none;color:white;padding:6px">sil</a></td>
+                   
+
+                </tr>
+
+            }
+            else if(item.foodtype=="kebab")
+            {
+                
+                        string path = $"/Food-Img/All-Food/Kebab/kebab-{item.foodId}.png";
+                    <tr>
+                        <td><div class="bak"><img class="accordion-item" src=@path></div></td>
+                        <td>Kebab</td>
+                        <td>@item.quantitiy</td>
+                        <td>@item.price </td>
+                    <td><a asp-action="remevotocart" asp-controller="Card"asp-route-ıd="@item.foodId" asp-route-type="@item.foodtype" style="display:inline-block;background-color:#cd0042;text-decoration:none;color:white;padding:6px">sil</a></td>
+                        
+                    </tr>
+
+                
+            }
+
+            else
+            {
+                
+                    string path = $"/Food-Img/All-Food/Drinks/drink-{item.foodId}.png";
+                    <tr>
+                        <td><div class="bak"><img class="accordion-item" src=@path></div></td>
+                        <td>Drink</td>
+                        <td>@item.quantitiy</td>
+                        <td>@item.price </td>
+                    <td><a asp-action="remevotocart" asp-controller="Card" asp-route-ıd="@item.foodId" asp-route-type="@item.foodtype" style="display:inline-block;background-color:#cd0042;text-decoration:none;color:white;padding:6px">sil</a></td>
+
+                    </tr>
+
+                
+            }
+
+                   
+
+
+        }
+        <tr>
+            <th>Toplam Fiyat</th>
+            <td></td>
+            <td></td>
+            <td>@ViewData["totalPrice"] TL</td>
+        </tr>
+
+    </table>
+    
+              <form asp-action = "buy" method ="post" asp-controller="Buy">
+             <button class="buy">Satın Al</button>
+              </form>
+          }
+
+  

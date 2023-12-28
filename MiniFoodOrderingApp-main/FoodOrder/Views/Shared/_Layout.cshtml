@@ -1,0 +1,62 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style1.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-1">
+            <a asp-action="main" asp-controller="Home"><img src="/Food-Img/Asset/logo.svg" alt="" /> </a>
+           
+            <a asp-action="main" asp-controller="Home">Home </a>
+            <a href="">About Us</a>
+            <a href="">contact</a>
+        </div>
+
+       
+        @if (!(Context.Request.Cookies["username"]is null))
+        {
+            <div class="navbar-2" style="width:400px">
+                <div class="profile" style=" width:150px;display:flex">
+                    <img src="~/Food-Img/Asset/userpp.png"  style="margin-right:3px"/>
+                    <a asp-action="person" asp-controller="Person" style="color: white;" class="btnProfile">@Context.Request.Cookies["username"]</a>
+                </div>
+
+
+                <a href="/home/GoBasket">Sepet</a>
+                <a asp-controller="logIn" asp-action="Logout">Çıkış Yap</a>
+               
+             
+             </div>
+        }
+        
+    </div> 
+   
+  
+  
+       
+       
+            @RenderBody()
+       
+      
+
+
+
+</body>
+
+</html>
+
+
+
+

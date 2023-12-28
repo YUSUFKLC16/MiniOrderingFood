@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FoodOrder
+build_property.RootNamespace = FoodOrder
+build_property.ProjectDir = C:\Users\KILIÇ\Desktop\MiniFoodOrderingApp-main\FoodOrder\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\KILIÇ\Desktop\MiniFoodOrderingApp-main\FoodOrder
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/Buy/buy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5XGJ1eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/Home/GoBasket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHb0Jhc2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/Home/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/logIn/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9nSW5cTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/logIn/logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9nSW5cbG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/Person/person.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXHBlcnNvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/QuickBuy/Quickbuy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpY2tCdXlcUXVpY2tidXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/Shared/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/SıgnUp/sıgnUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU8SxZ25VcFxzxLFnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KILIÇ/Desktop/MiniFoodOrderingApp-main/FoodOrder/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-y6clsh8sk4

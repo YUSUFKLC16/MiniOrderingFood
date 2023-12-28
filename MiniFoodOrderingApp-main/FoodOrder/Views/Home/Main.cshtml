@@ -1,0 +1,87 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="~/css/style1.css" />
+@using FoodOrder.Models
+@model Context
+
+<div class="container">
+    <h3><a href="">Burgers</a></h3>
+    <div class="categori">
+    @foreach(Burger item in Model.Burgers)
+    {
+            if (item.Id < 5)
+            {
+                string path = $"/Food-Img/All-Food/Burger/burger-{item.Id}.png";
+
+                <div class="row">
+                    <img src="@path" />
+                    <div><span>Lezizmi leziz burger seni bekliyor</span></div>
+                    <div>
+                        <span>Fiyat: @item.price TL</span>
+                        <div class="borderRow" style="text-align: center">
+                            <i class="ri-add-circle-line"></i> <a asp-route-ıd="@item.Id" asp-route-type="@item.type" class="addbasket"  asp-controller="Card" asp-action="addtocart"> Sepete Koy</a>
+                        </div>
+                    </div>
+                    <div class="borderRow">
+                        <i class="ri-run-line"></i><a asp-action="Quickbuy" asp-controller="QuickBuy" asp-route-ıd="@item.Id" asp-route-type="@item.type" asp-route-price="@item.price">Hızlı sipariş</a>
+                    </div>
+                </div>
+            }
+          
+    }
+    </div>
+
+     <h3><a href="">Kebabs</a></h3>
+    <div class="categori">
+        @foreach (Kebab item in Model.Kebabs)
+        {
+            if (item.Id < 5)
+            {
+                string path = $"/Food-Img/All-Food/Kebab/kebab-{item.Id}.png";
+
+                        <div class="row">
+                            <img src="@path" />
+                            <div><span>Lezizmi leziz kebablar   seni bekliyor</span></div>
+                            <div>
+                                <span>Fiyat: @item.price TL</span>
+                                <div class="borderRow" style="text-align: center">
+                            <i class="ri-add-circle-line"></i> <a asp-controller="Card" asp-action="addtocart" asp-route-ıd="@item.Id" asp-route-type="@item.type" class="addbasket"> Sepete Koy</a>
+                                </div>
+                            </div>
+                            <div class="borderRow">
+                        <i class="ri-run-line"></i><a asp-action="Quickbuy" asp-controller="QuickBuy" asp-route-ıd="@item.Id" asp-route-type="@item.type" asp-route-price="@item.price">Hızlı sipariş</a>
+                            </div>
+                        </div>
+            }
+
+        }
+    </div>
+     <h3><a href="">Drinks</a></h3>
+    <div class="categori">
+        @foreach (Drink item in Model.Drinks)
+        {
+            if (item.Id < 5)
+            {
+                string path = $"/Food-Img/All-Food/Drinks/drink-{item.Id}.png";
+
+                        <div class="row">
+                            <img src="@path" />
+                            <div><span>Lezizmi leziz içecekler  seni bekliyor</span></div>
+                            <div>
+                                <span>Fiyat: @item.price TL</span>
+                                <div class="borderRow" style="text-align: center">
+                            <i class="ri-add-circle-line"></i> <a asp-controller="Card" asp-action="addtocart" class="addbasket" asp-route-ıd="@item.Id" asp-route-type="@item.type"> Sepete Koy</a>
+                                </div>
+                            </div>
+                            <div class="borderRow">
+                        <i class="ri-run-line"></i><a asp-action="Quickbuy" asp-controller="QuickBuy" asp-route-ıd="@item.Id" asp-route-type="@item.type" asp-route-price="@item.price">Hızlı sipariş</a>
+                            </div>
+                        </div>
+            }
+
+        }
+    </div>
+
+</div>
+
+
+<script src="~/js/main.js"></script>

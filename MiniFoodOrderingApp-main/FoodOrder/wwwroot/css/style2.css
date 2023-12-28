@@ -1,0 +1,104 @@
+﻿body {
+    position: relative;
+}
+
+.container{
+    margin-top: 110px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.main {
+    width: 40%;
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 7px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.stepContainer {
+    display: flex;
+    align-items: center;
+}
+
+#cardNo{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#cardOwner {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.cardinfo input {
+    width: 110px;
+}
+
+#time {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+}
+
+#CVV{
+    width: 40%;
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+}
+
+.buy{
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #cd0042;
+    color: white;
+    padding: 6px;
+    border: 1px solid;
+    font-weight: 600;
+    height: 48px;
+    text-align: center;
+    width: 200px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+#map{
+    position: absolute;
+    right: 10%;
+    top: 0px;
+}
+
+.addressDetail{
+    position: absolute;
+    right: 20%;
+    top: 550px;
+     width:500px;
+}
+
+    .addressDetail input{
+        outline: none;
+        background-color: #fbf0f4;
+        color: black;
+        padding: 8px;
+        border: 1px solid bisque;
+        border-radius: 4px;
+        width: 330px;
+        margin-left: 10px;
+       
+    }
+
